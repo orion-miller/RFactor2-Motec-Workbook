@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <Workbook Locale="English_United States.1252" DefaultLocale="C" Version="200" Name="Tyres" Profile="Circuit" Active="Worksheets">
- <Worksheets Version="100" Name="Worksheets" PosPC="0,0,1000,1000" Active="Friction Circle">
+ <Worksheets Version="100" Name="Worksheets" PosPC="0,0,1000,1000" Active="FY vs SA">
   <Worksheet Version="200" Name="Temp Pressure Wear" LinkTo="Laps" LockByGPSTime="0">
    <Controls Active="Time/Distance Graph">
     <MoTeC.TimeDistance Version="100" Name="Time/Distance Graph" PosPC="0,0,1000,1000" ShowCaption="0" AutoCaption="0" LinkZoom="1" ModeId="0" ShowDataLegend="1" ShowColorLegend="1" TelemetryZoom="0" TraceLineWidth="1" TracePointSize="3" TraceStyle="0" LinkCursor="1" LinkDatum="1" ShowKeyValues="1" ShowKeyStats="0" KeyMode="0" KeyPos="1" ShowGridLines="1" ShowXAxis="1" ShowXAxisScrollBar="0" ShowYAxis="1" ShowYAxisScrollBar="1" ShowMarkers="1" ShowVSP="0" ShowDeviveEvents="1" ShowBands="1" TOD.Show="0" TOD.Format.Time="%X" TOD.Format.Date="%d %b %Y" TOD.UTC="UTC Time" TOD.Offset.Type="0" TOD.Offset.Mins="0" TOD.TZ.Show="0" BandGroup="Outings:Laps:Track Sections:Default" BandMode="1" OverlapMode="0" VariancePos="0.25" VarianceAutoScale="1">
@@ -185,73 +185,73 @@
    </Controls>
   </Worksheet>
   <Worksheet Version="200" Name="FY vs SA" LinkTo="Laps" LockByGPSTime="0">
-   <Controls Active="Scatter">
+   <Controls Active="Scatter (1)">
+    <MoTeC.Scatter Version="100" Name="Scatter (1)" PosPC="500,0,1000,500" ShowCaption="0" AutoCaption="0" LinkZoom="1" ModeId="0" ShowDataLegend="1" ShowColorLegend="1" TelemetryZoom="0" ActiveTrace="0" TileMode="1" TileActiveChan="0" TileAutoCols="1" TileCols="1" XChannel="Slip Angle FR" ZChannel="Tyre Temp FL Centre" XScaleMode="1" XScaleMin="-10" XScaleMax="10" YScaleMode="0" ZScaleMode="0" ShowPoints="1" ShowDensity="0" DensityBins="50" DensityFillColorMode="1" DensityFillColor1="64,64,255" DensityFillColor2="255,64,64" IntervalStat="0" IntervalStat.BinWidth="100" ShowGridLines="1" ShowGradient="0" ShowColorBinSamples="1" Style="2" Size="1" ShowLines="0" ShowRegEquation="0" LinePointMode="1" CursorStyle="3" RegressionType="0" RegressionParam="0" RegressionZero="0" RegressionDigits="3">
+     <Trace YChannel="MuY FR" Visible="1" YDelay="0"/>
+     <EvenWidthBandAxis PaletteMode="1" GradientMode="1" BandChanColor="240,0,0" AxisChanColor="240,0,0" Color1="255,244,244" Color2="255,64,64" ReversGradient="0" CentredBands="0" GreaterMaxBand="1" LessMinBand="1" Continuous="0" BandMode="1" DataMin="49.3357" DataMax="143.856" BandWidth="9.45202" BandCount="10">
+      <ColorBand Flags="2" Min="49.3357" Max="49.3357" Color="255,244,244" Visible="1"/>
+      <ColorBand Flags="7" Min="49.3357" Max="58.7877" Color="255,227,227" Visible="1"/>
+      <ColorBand Flags="7" Min="58.7877" Max="68.2397" Color="255,213,213" Visible="1"/>
+      <ColorBand Flags="7" Min="68.2397" Max="77.6917" Color="255,196,196" Visible="1"/>
+      <ColorBand Flags="7" Min="77.6917" Max="87.1438" Color="255,179,179" Visible="1"/>
+      <ColorBand Flags="7" Min="87.1438" Max="96.5958" Color="255,162,162" Visible="1"/>
+      <ColorBand Flags="7" Min="96.5958" Max="106.048" Color="255,147,147" Visible="1"/>
+      <ColorBand Flags="7" Min="106.048" Max="115.5" Color="255,130,130" Visible="1"/>
+      <ColorBand Flags="7" Min="115.5" Max="124.952" Color="255,113,113" Visible="1"/>
+      <ColorBand Flags="7" Min="124.952" Max="134.404" Color="255,96,96" Visible="1"/>
+      <ColorBand Flags="15" Min="134.404" Max="143.856" Color="255,81,81" Visible="1"/>
+      <ColorBand Flags="1" Min="143.856" Max="143.856" Color="255,64,64" Visible="1"/>
+     </EvenWidthBandAxis>
+    </MoTeC.Scatter>
     <MoTeC.Scatter Version="100" Name="Scatter" PosPC="0,0,500,500" ShowCaption="0" AutoCaption="0" LinkZoom="1" ModeId="0" ShowDataLegend="1" ShowColorLegend="1" TelemetryZoom="0" ActiveTrace="0" TileMode="1" TileActiveChan="0" TileAutoCols="1" TileCols="1" XChannel="Slip Angle FL" ZChannel="Tyre Temp FL Centre" XScaleMode="1" XScaleMin="-10" XScaleMax="10" YScaleMode="0" ZScaleMode="0" ShowPoints="1" ShowDensity="0" DensityBins="50" DensityFillColorMode="1" DensityFillColor1="64,64,255" DensityFillColor2="255,64,64" IntervalStat="0" IntervalStat.BinWidth="100" ShowGridLines="1" ShowGradient="0" ShowColorBinSamples="1" Style="2" Size="1" ShowLines="0" ShowRegEquation="0" LinePointMode="1" CursorStyle="3" RegressionType="0" RegressionParam="0" RegressionZero="0" RegressionDigits="3">
      <Trace YChannel="MuY FL" Visible="1" YDelay="0"/>
-     <EvenWidthBandAxis PaletteMode="1" GradientMode="1" BandChanColor="43,255,255" AxisChanColor="255,0,0" Color1="255,244,244" Color2="255,64,64" ReversGradient="0" CentredBands="0" GreaterMaxBand="1" LessMinBand="1" Continuous="0" BandMode="1" DataMin="43.1832" DataMax="111.337" BandWidth="6.81538" BandCount="10">
-      <ColorBand Flags="2" Min="43.1832" Max="43.1832" Color="255,244,244" Visible="1"/>
-      <ColorBand Flags="7" Min="43.1832" Max="49.9986" Color="255,227,227" Visible="1"/>
-      <ColorBand Flags="7" Min="49.9986" Max="56.814" Color="255,213,213" Visible="1"/>
-      <ColorBand Flags="7" Min="56.814" Max="63.6293" Color="255,196,196" Visible="1"/>
-      <ColorBand Flags="7" Min="63.6293" Max="70.4447" Color="255,179,179" Visible="1"/>
-      <ColorBand Flags="7" Min="70.4447" Max="77.2601" Color="255,162,162" Visible="1"/>
-      <ColorBand Flags="7" Min="77.2601" Max="84.0755" Color="255,147,147" Visible="1"/>
-      <ColorBand Flags="7" Min="84.0755" Max="90.8909" Color="255,130,130" Visible="1"/>
-      <ColorBand Flags="7" Min="90.8909" Max="97.7062" Color="255,113,113" Visible="1"/>
-      <ColorBand Flags="7" Min="97.7062" Max="104.522" Color="255,96,96" Visible="1"/>
-      <ColorBand Flags="15" Min="104.522" Max="111.337" Color="255,81,81" Visible="1"/>
-      <ColorBand Flags="1" Min="111.337" Max="111.337" Color="255,64,64" Visible="1"/>
+     <EvenWidthBandAxis PaletteMode="1" GradientMode="1" BandChanColor="240,0,0" AxisChanColor="240,0,0" Color1="255,244,244" Color2="255,64,64" ReversGradient="0" CentredBands="0" GreaterMaxBand="1" LessMinBand="1" Continuous="0" BandMode="1" DataMin="49.3357" DataMax="143.856" BandWidth="9.45202" BandCount="10">
+      <ColorBand Flags="2" Min="49.3357" Max="49.3357" Color="255,244,244" Visible="1"/>
+      <ColorBand Flags="7" Min="49.3357" Max="58.7877" Color="255,227,227" Visible="1"/>
+      <ColorBand Flags="7" Min="58.7877" Max="68.2397" Color="255,213,213" Visible="1"/>
+      <ColorBand Flags="7" Min="68.2397" Max="77.6917" Color="255,196,196" Visible="1"/>
+      <ColorBand Flags="7" Min="77.6917" Max="87.1438" Color="255,179,179" Visible="1"/>
+      <ColorBand Flags="7" Min="87.1438" Max="96.5958" Color="255,162,162" Visible="1"/>
+      <ColorBand Flags="7" Min="96.5958" Max="106.048" Color="255,147,147" Visible="1"/>
+      <ColorBand Flags="7" Min="106.048" Max="115.5" Color="255,130,130" Visible="1"/>
+      <ColorBand Flags="7" Min="115.5" Max="124.952" Color="255,113,113" Visible="1"/>
+      <ColorBand Flags="7" Min="124.952" Max="134.404" Color="255,96,96" Visible="1"/>
+      <ColorBand Flags="15" Min="134.404" Max="143.856" Color="255,81,81" Visible="1"/>
+      <ColorBand Flags="1" Min="143.856" Max="143.856" Color="255,64,64" Visible="1"/>
      </EvenWidthBandAxis>
     </MoTeC.Scatter>
     <MoTeC.Scatter Version="100" Name="Scatter (3)" PosPC="500,500,1000,1000" ShowCaption="0" AutoCaption="0" LinkZoom="1" ModeId="0" ShowDataLegend="1" ShowColorLegend="1" TelemetryZoom="0" ActiveTrace="0" TileMode="1" TileActiveChan="0" TileAutoCols="1" TileCols="1" XChannel="Slip Angle RR" ZChannel="Tyre Temp FL Centre" XScaleMode="1" XScaleMin="-10" XScaleMax="10" YScaleMode="0" ZScaleMode="0" ShowPoints="1" ShowDensity="0" DensityBins="50" DensityFillColorMode="1" DensityFillColor1="64,64,255" DensityFillColor2="255,64,64" IntervalStat="0" IntervalStat.BinWidth="100" ShowGridLines="1" ShowGradient="0" ShowColorBinSamples="1" Style="2" Size="1" ShowLines="0" ShowRegEquation="0" LinePointMode="1" CursorStyle="3" RegressionType="0" RegressionParam="0" RegressionZero="0" RegressionDigits="3">
      <Trace YChannel="MuY RR" Visible="1" YDelay="0"/>
-     <EvenWidthBandAxis PaletteMode="1" GradientMode="1" BandChanColor="43,255,255" AxisChanColor="255,0,0" Color1="255,244,244" Color2="255,64,64" ReversGradient="0" CentredBands="0" GreaterMaxBand="1" LessMinBand="1" Continuous="0" BandMode="1" DataMin="43.1832" DataMax="111.337" BandWidth="6.81538" BandCount="10">
-      <ColorBand Flags="2" Min="43.1832" Max="43.1832" Color="255,244,244" Visible="1"/>
-      <ColorBand Flags="7" Min="43.1832" Max="49.9986" Color="255,227,227" Visible="1"/>
-      <ColorBand Flags="7" Min="49.9986" Max="56.814" Color="255,213,213" Visible="1"/>
-      <ColorBand Flags="7" Min="56.814" Max="63.6293" Color="255,196,196" Visible="1"/>
-      <ColorBand Flags="7" Min="63.6293" Max="70.4447" Color="255,179,179" Visible="1"/>
-      <ColorBand Flags="7" Min="70.4447" Max="77.2601" Color="255,162,162" Visible="1"/>
-      <ColorBand Flags="7" Min="77.2601" Max="84.0755" Color="255,147,147" Visible="1"/>
-      <ColorBand Flags="7" Min="84.0755" Max="90.8909" Color="255,130,130" Visible="1"/>
-      <ColorBand Flags="7" Min="90.8909" Max="97.7062" Color="255,113,113" Visible="1"/>
-      <ColorBand Flags="7" Min="97.7062" Max="104.522" Color="255,96,96" Visible="1"/>
-      <ColorBand Flags="15" Min="104.522" Max="111.337" Color="255,81,81" Visible="1"/>
-      <ColorBand Flags="1" Min="111.337" Max="111.337" Color="255,64,64" Visible="1"/>
-     </EvenWidthBandAxis>
-    </MoTeC.Scatter>
-    <MoTeC.Scatter Version="100" Name="Scatter (1)" PosPC="500,0,1000,500" ShowCaption="0" AutoCaption="0" LinkZoom="1" ModeId="0" ShowDataLegend="1" ShowColorLegend="1" TelemetryZoom="0" ActiveTrace="0" TileMode="1" TileActiveChan="0" TileAutoCols="1" TileCols="1" XChannel="Slip Angle FR" ZChannel="Tyre Temp FL Centre" XScaleMode="1" XScaleMin="-10" XScaleMax="10" YScaleMode="0" ZScaleMode="0" ShowPoints="1" ShowDensity="0" DensityBins="50" DensityFillColorMode="1" DensityFillColor1="64,64,255" DensityFillColor2="255,64,64" IntervalStat="0" IntervalStat.BinWidth="100" ShowGridLines="1" ShowGradient="0" ShowColorBinSamples="1" Style="2" Size="1" ShowLines="0" ShowRegEquation="0" LinePointMode="1" CursorStyle="3" RegressionType="0" RegressionParam="0" RegressionZero="0" RegressionDigits="3">
-     <Trace YChannel="MuY FR" Visible="1" YDelay="0"/>
-     <EvenWidthBandAxis PaletteMode="1" GradientMode="1" BandChanColor="43,255,255" AxisChanColor="255,0,0" Color1="255,244,244" Color2="255,64,64" ReversGradient="0" CentredBands="0" GreaterMaxBand="1" LessMinBand="1" Continuous="0" BandMode="1" DataMin="43.1832" DataMax="111.337" BandWidth="6.81538" BandCount="10">
-      <ColorBand Flags="2" Min="43.1832" Max="43.1832" Color="255,244,244" Visible="1"/>
-      <ColorBand Flags="7" Min="43.1832" Max="49.9986" Color="255,227,227" Visible="1"/>
-      <ColorBand Flags="7" Min="49.9986" Max="56.814" Color="255,213,213" Visible="1"/>
-      <ColorBand Flags="7" Min="56.814" Max="63.6293" Color="255,196,196" Visible="1"/>
-      <ColorBand Flags="7" Min="63.6293" Max="70.4447" Color="255,179,179" Visible="1"/>
-      <ColorBand Flags="7" Min="70.4447" Max="77.2601" Color="255,162,162" Visible="1"/>
-      <ColorBand Flags="7" Min="77.2601" Max="84.0755" Color="255,147,147" Visible="1"/>
-      <ColorBand Flags="7" Min="84.0755" Max="90.8909" Color="255,130,130" Visible="1"/>
-      <ColorBand Flags="7" Min="90.8909" Max="97.7062" Color="255,113,113" Visible="1"/>
-      <ColorBand Flags="7" Min="97.7062" Max="104.522" Color="255,96,96" Visible="1"/>
-      <ColorBand Flags="15" Min="104.522" Max="111.337" Color="255,81,81" Visible="1"/>
-      <ColorBand Flags="1" Min="111.337" Max="111.337" Color="255,64,64" Visible="1"/>
+     <EvenWidthBandAxis PaletteMode="1" GradientMode="1" BandChanColor="240,0,0" AxisChanColor="240,0,0" Color1="255,244,244" Color2="255,64,64" ReversGradient="0" CentredBands="0" GreaterMaxBand="1" LessMinBand="1" Continuous="0" BandMode="1" DataMin="49.3357" DataMax="143.856" BandWidth="9.45202" BandCount="10">
+      <ColorBand Flags="2" Min="49.3357" Max="49.3357" Color="255,244,244" Visible="1"/>
+      <ColorBand Flags="7" Min="49.3357" Max="58.7877" Color="255,227,227" Visible="1"/>
+      <ColorBand Flags="7" Min="58.7877" Max="68.2397" Color="255,213,213" Visible="1"/>
+      <ColorBand Flags="7" Min="68.2397" Max="77.6917" Color="255,196,196" Visible="1"/>
+      <ColorBand Flags="7" Min="77.6917" Max="87.1438" Color="255,179,179" Visible="1"/>
+      <ColorBand Flags="7" Min="87.1438" Max="96.5958" Color="255,162,162" Visible="1"/>
+      <ColorBand Flags="7" Min="96.5958" Max="106.048" Color="255,147,147" Visible="1"/>
+      <ColorBand Flags="7" Min="106.048" Max="115.5" Color="255,130,130" Visible="1"/>
+      <ColorBand Flags="7" Min="115.5" Max="124.952" Color="255,113,113" Visible="1"/>
+      <ColorBand Flags="7" Min="124.952" Max="134.404" Color="255,96,96" Visible="1"/>
+      <ColorBand Flags="15" Min="134.404" Max="143.856" Color="255,81,81" Visible="1"/>
+      <ColorBand Flags="1" Min="143.856" Max="143.856" Color="255,64,64" Visible="1"/>
      </EvenWidthBandAxis>
     </MoTeC.Scatter>
     <MoTeC.Scatter Version="100" Name="Scatter (2)" PosPC="0,500,500,1000" ShowCaption="0" AutoCaption="0" LinkZoom="1" ModeId="0" ShowDataLegend="1" ShowColorLegend="1" TelemetryZoom="0" ActiveTrace="0" TileMode="1" TileActiveChan="0" TileAutoCols="1" TileCols="1" XChannel="Slip Angle RL" ZChannel="Tyre Temp FL Centre" XScaleMode="1" XScaleMin="-10" XScaleMax="10" YScaleMode="0" ZScaleMode="0" ShowPoints="1" ShowDensity="0" DensityBins="50" DensityFillColorMode="1" DensityFillColor1="64,64,255" DensityFillColor2="255,64,64" IntervalStat="0" IntervalStat.BinWidth="100" ShowGridLines="1" ShowGradient="0" ShowColorBinSamples="1" Style="2" Size="1" ShowLines="0" ShowRegEquation="0" LinePointMode="1" CursorStyle="3" RegressionType="0" RegressionParam="0" RegressionZero="0" RegressionDigits="3">
      <Trace YChannel="MuY RL" Visible="1" YDelay="0"/>
-     <EvenWidthBandAxis PaletteMode="1" GradientMode="1" BandChanColor="43,255,255" AxisChanColor="255,0,0" Color1="255,244,244" Color2="255,64,64" ReversGradient="0" CentredBands="0" GreaterMaxBand="1" LessMinBand="1" Continuous="0" BandMode="1" DataMin="43.1832" DataMax="111.337" BandWidth="6.81538" BandCount="10">
-      <ColorBand Flags="2" Min="43.1832" Max="43.1832" Color="255,244,244" Visible="1"/>
-      <ColorBand Flags="7" Min="43.1832" Max="49.9986" Color="255,227,227" Visible="1"/>
-      <ColorBand Flags="7" Min="49.9986" Max="56.814" Color="255,213,213" Visible="1"/>
-      <ColorBand Flags="7" Min="56.814" Max="63.6293" Color="255,196,196" Visible="1"/>
-      <ColorBand Flags="7" Min="63.6293" Max="70.4447" Color="255,179,179" Visible="1"/>
-      <ColorBand Flags="7" Min="70.4447" Max="77.2601" Color="255,162,162" Visible="1"/>
-      <ColorBand Flags="7" Min="77.2601" Max="84.0755" Color="255,147,147" Visible="1"/>
-      <ColorBand Flags="7" Min="84.0755" Max="90.8909" Color="255,130,130" Visible="1"/>
-      <ColorBand Flags="7" Min="90.8909" Max="97.7062" Color="255,113,113" Visible="1"/>
-      <ColorBand Flags="7" Min="97.7062" Max="104.522" Color="255,96,96" Visible="1"/>
-      <ColorBand Flags="15" Min="104.522" Max="111.337" Color="255,81,81" Visible="1"/>
-      <ColorBand Flags="1" Min="111.337" Max="111.337" Color="255,64,64" Visible="1"/>
+     <EvenWidthBandAxis PaletteMode="1" GradientMode="1" BandChanColor="240,0,0" AxisChanColor="240,0,0" Color1="255,244,244" Color2="255,64,64" ReversGradient="0" CentredBands="0" GreaterMaxBand="1" LessMinBand="1" Continuous="0" BandMode="1" DataMin="49.3357" DataMax="143.856" BandWidth="9.45202" BandCount="10">
+      <ColorBand Flags="2" Min="49.3357" Max="49.3357" Color="255,244,244" Visible="1"/>
+      <ColorBand Flags="7" Min="49.3357" Max="58.7877" Color="255,227,227" Visible="1"/>
+      <ColorBand Flags="7" Min="58.7877" Max="68.2397" Color="255,213,213" Visible="1"/>
+      <ColorBand Flags="7" Min="68.2397" Max="77.6917" Color="255,196,196" Visible="1"/>
+      <ColorBand Flags="7" Min="77.6917" Max="87.1438" Color="255,179,179" Visible="1"/>
+      <ColorBand Flags="7" Min="87.1438" Max="96.5958" Color="255,162,162" Visible="1"/>
+      <ColorBand Flags="7" Min="96.5958" Max="106.048" Color="255,147,147" Visible="1"/>
+      <ColorBand Flags="7" Min="106.048" Max="115.5" Color="255,130,130" Visible="1"/>
+      <ColorBand Flags="7" Min="115.5" Max="124.952" Color="255,113,113" Visible="1"/>
+      <ColorBand Flags="7" Min="124.952" Max="134.404" Color="255,96,96" Visible="1"/>
+      <ColorBand Flags="15" Min="134.404" Max="143.856" Color="255,81,81" Visible="1"/>
+      <ColorBand Flags="1" Min="143.856" Max="143.856" Color="255,64,64" Visible="1"/>
      </EvenWidthBandAxis>
     </MoTeC.Scatter>
    </Controls>
@@ -401,73 +401,73 @@
    </Controls>
   </Worksheet>
   <Worksheet Version="200" Name="FX vs SR" LinkTo="Laps" LockByGPSTime="0">
-   <Controls Active="Scatter">
-    <MoTeC.Scatter Version="100" Name="Scatter" PosPC="0,0,500,500" ShowCaption="0" AutoCaption="0" LinkZoom="1" ModeId="0" ShowDataLegend="1" ShowColorLegend="1" TelemetryZoom="0" ActiveTrace="0" TileMode="1" TileActiveChan="0" TileAutoCols="1" TileCols="1" XChannel="Slip Ratio FL" ZChannel="Tyre Temp FL Centre" XScaleMode="1" XScaleMin="-0.2" XScaleMax="0.2" YScaleMode="0" ZScaleMode="0" ShowPoints="1" ShowDensity="0" DensityBins="50" DensityFillColorMode="1" DensityFillColor1="64,64,255" DensityFillColor2="255,64,64" IntervalStat="0" IntervalStat.BinWidth="100" ShowGridLines="1" ShowGradient="0" ShowColorBinSamples="1" Style="2" Size="1" ShowLines="0" ShowRegEquation="0" LinePointMode="1" CursorStyle="3" RegressionType="0" RegressionParam="0" RegressionZero="0" RegressionDigits="3">
-     <Trace YChannel="MuX FL" Visible="1" YDelay="0"/>
-     <EvenWidthBandAxis PaletteMode="1" GradientMode="1" BandChanColor="43,255,255" AxisChanColor="255,0,0" Color1="255,244,244" Color2="255,64,64" ReversGradient="0" CentredBands="0" GreaterMaxBand="1" LessMinBand="1" Continuous="0" BandMode="1" DataMin="43.1832" DataMax="111.337" BandWidth="6.81538" BandCount="10">
-      <ColorBand Flags="2" Min="43.1832" Max="43.1832" Color="255,244,244" Visible="1"/>
-      <ColorBand Flags="7" Min="43.1832" Max="49.9986" Color="255,227,227" Visible="1"/>
-      <ColorBand Flags="7" Min="49.9986" Max="56.814" Color="255,213,213" Visible="1"/>
-      <ColorBand Flags="7" Min="56.814" Max="63.6293" Color="255,196,196" Visible="1"/>
-      <ColorBand Flags="7" Min="63.6293" Max="70.4447" Color="255,179,179" Visible="1"/>
-      <ColorBand Flags="7" Min="70.4447" Max="77.2601" Color="255,162,162" Visible="1"/>
-      <ColorBand Flags="7" Min="77.2601" Max="84.0755" Color="255,147,147" Visible="1"/>
-      <ColorBand Flags="7" Min="84.0755" Max="90.8909" Color="255,130,130" Visible="1"/>
-      <ColorBand Flags="7" Min="90.8909" Max="97.7062" Color="255,113,113" Visible="1"/>
-      <ColorBand Flags="7" Min="97.7062" Max="104.522" Color="255,96,96" Visible="1"/>
-      <ColorBand Flags="15" Min="104.522" Max="111.337" Color="255,81,81" Visible="1"/>
-      <ColorBand Flags="1" Min="111.337" Max="111.337" Color="255,64,64" Visible="1"/>
+   <Controls Active="Scatter (3)">
+    <MoTeC.Scatter Version="100" Name="Scatter (3)" PosPC="500,500,1000,1000" ShowCaption="0" AutoCaption="0" LinkZoom="1" ModeId="0" ShowDataLegend="1" ShowColorLegend="1" TelemetryZoom="0" ActiveTrace="0" TileMode="1" TileActiveChan="0" TileAutoCols="1" TileCols="1" XChannel="Slip Ratio RR" ZChannel="Tyre Temp FL Centre" XScaleMode="1" XScaleMin="-0.2" XScaleMax="0.2" YScaleMode="0" ZScaleMode="0" ShowPoints="1" ShowDensity="0" DensityBins="50" DensityFillColorMode="1" DensityFillColor1="64,64,255" DensityFillColor2="255,64,64" IntervalStat="0" IntervalStat.BinWidth="100" ShowGridLines="1" ShowGradient="0" ShowColorBinSamples="1" Style="2" Size="1" ShowLines="0" ShowRegEquation="0" LinePointMode="1" CursorStyle="3" RegressionType="0" RegressionParam="0" RegressionZero="0" RegressionDigits="3">
+     <Trace YChannel="MuX RR" Visible="1" YDelay="0"/>
+     <EvenWidthBandAxis PaletteMode="1" GradientMode="1" BandChanColor="43,255,255" AxisChanColor="255,0,0" Color1="255,244,244" Color2="255,64,64" ReversGradient="0" CentredBands="0" GreaterMaxBand="1" LessMinBand="1" Continuous="0" BandMode="1" DataMin="49.3357" DataMax="143.856" BandWidth="9.45202" BandCount="10">
+      <ColorBand Flags="2" Min="49.3357" Max="49.3357" Color="255,244,244" Visible="1"/>
+      <ColorBand Flags="7" Min="49.3357" Max="58.7877" Color="255,227,227" Visible="1"/>
+      <ColorBand Flags="7" Min="58.7877" Max="68.2397" Color="255,213,213" Visible="1"/>
+      <ColorBand Flags="7" Min="68.2397" Max="77.6917" Color="255,196,196" Visible="1"/>
+      <ColorBand Flags="7" Min="77.6917" Max="87.1438" Color="255,179,179" Visible="1"/>
+      <ColorBand Flags="7" Min="87.1438" Max="96.5958" Color="255,162,162" Visible="1"/>
+      <ColorBand Flags="7" Min="96.5958" Max="106.048" Color="255,147,147" Visible="1"/>
+      <ColorBand Flags="7" Min="106.048" Max="115.5" Color="255,130,130" Visible="1"/>
+      <ColorBand Flags="7" Min="115.5" Max="124.952" Color="255,113,113" Visible="1"/>
+      <ColorBand Flags="7" Min="124.952" Max="134.404" Color="255,96,96" Visible="1"/>
+      <ColorBand Flags="15" Min="134.404" Max="143.856" Color="255,81,81" Visible="1"/>
+      <ColorBand Flags="1" Min="143.856" Max="143.856" Color="255,64,64" Visible="1"/>
      </EvenWidthBandAxis>
     </MoTeC.Scatter>
     <MoTeC.Scatter Version="100" Name="Scatter (1)" PosPC="500,0,1000,500" ShowCaption="0" AutoCaption="0" LinkZoom="1" ModeId="0" ShowDataLegend="1" ShowColorLegend="1" TelemetryZoom="0" ActiveTrace="0" TileMode="1" TileActiveChan="0" TileAutoCols="1" TileCols="1" XChannel="Slip Ratio FR" ZChannel="Tyre Temp FL Centre" XScaleMode="1" XScaleMin="-0.2" XScaleMax="0.2" YScaleMode="0" ZScaleMode="0" ShowPoints="1" ShowDensity="0" DensityBins="50" DensityFillColorMode="1" DensityFillColor1="64,64,255" DensityFillColor2="255,64,64" IntervalStat="0" IntervalStat.BinWidth="100" ShowGridLines="1" ShowGradient="0" ShowColorBinSamples="1" Style="2" Size="1" ShowLines="0" ShowRegEquation="1" LinePointMode="1" CursorStyle="3" RegressionType="0" RegressionParam="0" RegressionZero="0" RegressionDigits="3">
      <Trace YChannel="MuX FR" Visible="1" YDelay="0"/>
-     <EvenWidthBandAxis PaletteMode="1" GradientMode="1" BandChanColor="43,255,255" AxisChanColor="255,0,0" Color1="255,244,244" Color2="255,64,64" ReversGradient="0" CentredBands="0" GreaterMaxBand="1" LessMinBand="1" Continuous="0" BandMode="1" DataMin="43.1832" DataMax="111.337" BandWidth="6.81538" BandCount="10">
-      <ColorBand Flags="2" Min="43.1832" Max="43.1832" Color="255,244,244" Visible="1"/>
-      <ColorBand Flags="7" Min="43.1832" Max="49.9986" Color="255,227,227" Visible="1"/>
-      <ColorBand Flags="7" Min="49.9986" Max="56.814" Color="255,213,213" Visible="1"/>
-      <ColorBand Flags="7" Min="56.814" Max="63.6293" Color="255,196,196" Visible="1"/>
-      <ColorBand Flags="7" Min="63.6293" Max="70.4447" Color="255,179,179" Visible="1"/>
-      <ColorBand Flags="7" Min="70.4447" Max="77.2601" Color="255,162,162" Visible="1"/>
-      <ColorBand Flags="7" Min="77.2601" Max="84.0755" Color="255,147,147" Visible="1"/>
-      <ColorBand Flags="7" Min="84.0755" Max="90.8909" Color="255,130,130" Visible="1"/>
-      <ColorBand Flags="7" Min="90.8909" Max="97.7062" Color="255,113,113" Visible="1"/>
-      <ColorBand Flags="7" Min="97.7062" Max="104.522" Color="255,96,96" Visible="1"/>
-      <ColorBand Flags="15" Min="104.522" Max="111.337" Color="255,81,81" Visible="1"/>
-      <ColorBand Flags="1" Min="111.337" Max="111.337" Color="255,64,64" Visible="1"/>
+     <EvenWidthBandAxis PaletteMode="1" GradientMode="1" BandChanColor="43,255,255" AxisChanColor="255,0,0" Color1="255,244,244" Color2="255,64,64" ReversGradient="0" CentredBands="0" GreaterMaxBand="1" LessMinBand="1" Continuous="0" BandMode="1" DataMin="49.3357" DataMax="143.856" BandWidth="9.45202" BandCount="10">
+      <ColorBand Flags="2" Min="49.3357" Max="49.3357" Color="255,244,244" Visible="1"/>
+      <ColorBand Flags="7" Min="49.3357" Max="58.7877" Color="255,227,227" Visible="1"/>
+      <ColorBand Flags="7" Min="58.7877" Max="68.2397" Color="255,213,213" Visible="1"/>
+      <ColorBand Flags="7" Min="68.2397" Max="77.6917" Color="255,196,196" Visible="1"/>
+      <ColorBand Flags="7" Min="77.6917" Max="87.1438" Color="255,179,179" Visible="1"/>
+      <ColorBand Flags="7" Min="87.1438" Max="96.5958" Color="255,162,162" Visible="1"/>
+      <ColorBand Flags="7" Min="96.5958" Max="106.048" Color="255,147,147" Visible="1"/>
+      <ColorBand Flags="7" Min="106.048" Max="115.5" Color="255,130,130" Visible="1"/>
+      <ColorBand Flags="7" Min="115.5" Max="124.952" Color="255,113,113" Visible="1"/>
+      <ColorBand Flags="7" Min="124.952" Max="134.404" Color="255,96,96" Visible="1"/>
+      <ColorBand Flags="15" Min="134.404" Max="143.856" Color="255,81,81" Visible="1"/>
+      <ColorBand Flags="1" Min="143.856" Max="143.856" Color="255,64,64" Visible="1"/>
+     </EvenWidthBandAxis>
+    </MoTeC.Scatter>
+    <MoTeC.Scatter Version="100" Name="Scatter" PosPC="0,0,500,500" ShowCaption="0" AutoCaption="0" LinkZoom="1" ModeId="0" ShowDataLegend="1" ShowColorLegend="1" TelemetryZoom="0" ActiveTrace="0" TileMode="1" TileActiveChan="0" TileAutoCols="1" TileCols="1" XChannel="Slip Ratio FL" ZChannel="Tyre Temp FL Centre" XScaleMode="1" XScaleMin="-0.2" XScaleMax="0.2" YScaleMode="0" ZScaleMode="0" ShowPoints="1" ShowDensity="0" DensityBins="50" DensityFillColorMode="1" DensityFillColor1="64,64,255" DensityFillColor2="255,64,64" IntervalStat="0" IntervalStat.BinWidth="100" ShowGridLines="1" ShowGradient="0" ShowColorBinSamples="1" Style="2" Size="1" ShowLines="0" ShowRegEquation="0" LinePointMode="1" CursorStyle="3" RegressionType="0" RegressionParam="0" RegressionZero="0" RegressionDigits="3">
+     <Trace YChannel="MuX FL" Visible="1" YDelay="0"/>
+     <EvenWidthBandAxis PaletteMode="1" GradientMode="1" BandChanColor="43,255,255" AxisChanColor="255,0,0" Color1="255,244,244" Color2="255,64,64" ReversGradient="0" CentredBands="0" GreaterMaxBand="1" LessMinBand="1" Continuous="0" BandMode="1" DataMin="49.3357" DataMax="143.856" BandWidth="9.45202" BandCount="10">
+      <ColorBand Flags="2" Min="49.3357" Max="49.3357" Color="255,244,244" Visible="1"/>
+      <ColorBand Flags="7" Min="49.3357" Max="58.7877" Color="255,227,227" Visible="1"/>
+      <ColorBand Flags="7" Min="58.7877" Max="68.2397" Color="255,213,213" Visible="1"/>
+      <ColorBand Flags="7" Min="68.2397" Max="77.6917" Color="255,196,196" Visible="1"/>
+      <ColorBand Flags="7" Min="77.6917" Max="87.1438" Color="255,179,179" Visible="1"/>
+      <ColorBand Flags="7" Min="87.1438" Max="96.5958" Color="255,162,162" Visible="1"/>
+      <ColorBand Flags="7" Min="96.5958" Max="106.048" Color="255,147,147" Visible="1"/>
+      <ColorBand Flags="7" Min="106.048" Max="115.5" Color="255,130,130" Visible="1"/>
+      <ColorBand Flags="7" Min="115.5" Max="124.952" Color="255,113,113" Visible="1"/>
+      <ColorBand Flags="7" Min="124.952" Max="134.404" Color="255,96,96" Visible="1"/>
+      <ColorBand Flags="15" Min="134.404" Max="143.856" Color="255,81,81" Visible="1"/>
+      <ColorBand Flags="1" Min="143.856" Max="143.856" Color="255,64,64" Visible="1"/>
      </EvenWidthBandAxis>
     </MoTeC.Scatter>
     <MoTeC.Scatter Version="100" Name="Scatter (2)" PosPC="0,500,500,1000" ShowCaption="0" AutoCaption="0" LinkZoom="1" ModeId="0" ShowDataLegend="1" ShowColorLegend="1" TelemetryZoom="0" ActiveTrace="0" TileMode="1" TileActiveChan="0" TileAutoCols="1" TileCols="1" XChannel="Slip Ratio RL" ZChannel="Tyre Temp FL Centre" XScaleMode="1" XScaleMin="-0.2" XScaleMax="0.2" YScaleMode="0" ZScaleMode="0" ShowPoints="1" ShowDensity="0" DensityBins="50" DensityFillColorMode="1" DensityFillColor1="64,64,255" DensityFillColor2="255,64,64" IntervalStat="0" IntervalStat.BinWidth="100" ShowGridLines="1" ShowGradient="0" ShowColorBinSamples="1" Style="2" Size="1" ShowLines="0" ShowRegEquation="0" LinePointMode="1" CursorStyle="3" RegressionType="0" RegressionParam="0" RegressionZero="0" RegressionDigits="3">
      <Trace YChannel="MuX RL" Visible="1" YDelay="0"/>
-     <EvenWidthBandAxis PaletteMode="1" GradientMode="1" BandChanColor="43,255,255" AxisChanColor="255,0,0" Color1="255,244,244" Color2="255,64,64" ReversGradient="0" CentredBands="0" GreaterMaxBand="1" LessMinBand="1" Continuous="0" BandMode="1" DataMin="43.1832" DataMax="111.337" BandWidth="6.81538" BandCount="10">
-      <ColorBand Flags="2" Min="43.1832" Max="43.1832" Color="255,244,244" Visible="1"/>
-      <ColorBand Flags="7" Min="43.1832" Max="49.9986" Color="255,227,227" Visible="1"/>
-      <ColorBand Flags="7" Min="49.9986" Max="56.814" Color="255,213,213" Visible="1"/>
-      <ColorBand Flags="7" Min="56.814" Max="63.6293" Color="255,196,196" Visible="1"/>
-      <ColorBand Flags="7" Min="63.6293" Max="70.4447" Color="255,179,179" Visible="1"/>
-      <ColorBand Flags="7" Min="70.4447" Max="77.2601" Color="255,162,162" Visible="1"/>
-      <ColorBand Flags="7" Min="77.2601" Max="84.0755" Color="255,147,147" Visible="1"/>
-      <ColorBand Flags="7" Min="84.0755" Max="90.8909" Color="255,130,130" Visible="1"/>
-      <ColorBand Flags="7" Min="90.8909" Max="97.7062" Color="255,113,113" Visible="1"/>
-      <ColorBand Flags="7" Min="97.7062" Max="104.522" Color="255,96,96" Visible="1"/>
-      <ColorBand Flags="15" Min="104.522" Max="111.337" Color="255,81,81" Visible="1"/>
-      <ColorBand Flags="1" Min="111.337" Max="111.337" Color="255,64,64" Visible="1"/>
-     </EvenWidthBandAxis>
-    </MoTeC.Scatter>
-    <MoTeC.Scatter Version="100" Name="Scatter (3)" PosPC="500,500,1000,1000" ShowCaption="0" AutoCaption="0" LinkZoom="1" ModeId="0" ShowDataLegend="1" ShowColorLegend="1" TelemetryZoom="0" ActiveTrace="0" TileMode="1" TileActiveChan="0" TileAutoCols="1" TileCols="1" XChannel="Slip Ratio RR" ZChannel="Tyre Temp FL Centre" XScaleMode="1" XScaleMin="-0.2" XScaleMax="0.2" YScaleMode="0" ZScaleMode="0" ShowPoints="1" ShowDensity="0" DensityBins="50" DensityFillColorMode="1" DensityFillColor1="64,64,255" DensityFillColor2="255,64,64" IntervalStat="0" IntervalStat.BinWidth="100" ShowGridLines="1" ShowGradient="0" ShowColorBinSamples="1" Style="2" Size="1" ShowLines="0" ShowRegEquation="0" LinePointMode="1" CursorStyle="3" RegressionType="0" RegressionParam="0" RegressionZero="0" RegressionDigits="3">
-     <Trace YChannel="MuX RR" Visible="1" YDelay="0"/>
-     <EvenWidthBandAxis PaletteMode="1" GradientMode="1" BandChanColor="43,255,255" AxisChanColor="255,0,0" Color1="255,244,244" Color2="255,64,64" ReversGradient="0" CentredBands="0" GreaterMaxBand="1" LessMinBand="1" Continuous="0" BandMode="1" DataMin="43.1832" DataMax="111.337" BandWidth="6.81538" BandCount="10">
-      <ColorBand Flags="2" Min="43.1832" Max="43.1832" Color="255,244,244" Visible="1"/>
-      <ColorBand Flags="7" Min="43.1832" Max="49.9986" Color="255,227,227" Visible="1"/>
-      <ColorBand Flags="7" Min="49.9986" Max="56.814" Color="255,213,213" Visible="1"/>
-      <ColorBand Flags="7" Min="56.814" Max="63.6293" Color="255,196,196" Visible="1"/>
-      <ColorBand Flags="7" Min="63.6293" Max="70.4447" Color="255,179,179" Visible="1"/>
-      <ColorBand Flags="7" Min="70.4447" Max="77.2601" Color="255,162,162" Visible="1"/>
-      <ColorBand Flags="7" Min="77.2601" Max="84.0755" Color="255,147,147" Visible="1"/>
-      <ColorBand Flags="7" Min="84.0755" Max="90.8909" Color="255,130,130" Visible="1"/>
-      <ColorBand Flags="7" Min="90.8909" Max="97.7062" Color="255,113,113" Visible="1"/>
-      <ColorBand Flags="7" Min="97.7062" Max="104.522" Color="255,96,96" Visible="1"/>
-      <ColorBand Flags="15" Min="104.522" Max="111.337" Color="255,81,81" Visible="1"/>
-      <ColorBand Flags="1" Min="111.337" Max="111.337" Color="255,64,64" Visible="1"/>
+     <EvenWidthBandAxis PaletteMode="1" GradientMode="1" BandChanColor="43,255,255" AxisChanColor="255,0,0" Color1="255,244,244" Color2="255,64,64" ReversGradient="0" CentredBands="0" GreaterMaxBand="1" LessMinBand="1" Continuous="0" BandMode="1" DataMin="49.3357" DataMax="143.856" BandWidth="9.45202" BandCount="10">
+      <ColorBand Flags="2" Min="49.3357" Max="49.3357" Color="255,244,244" Visible="1"/>
+      <ColorBand Flags="7" Min="49.3357" Max="58.7877" Color="255,227,227" Visible="1"/>
+      <ColorBand Flags="7" Min="58.7877" Max="68.2397" Color="255,213,213" Visible="1"/>
+      <ColorBand Flags="7" Min="68.2397" Max="77.6917" Color="255,196,196" Visible="1"/>
+      <ColorBand Flags="7" Min="77.6917" Max="87.1438" Color="255,179,179" Visible="1"/>
+      <ColorBand Flags="7" Min="87.1438" Max="96.5958" Color="255,162,162" Visible="1"/>
+      <ColorBand Flags="7" Min="96.5958" Max="106.048" Color="255,147,147" Visible="1"/>
+      <ColorBand Flags="7" Min="106.048" Max="115.5" Color="255,130,130" Visible="1"/>
+      <ColorBand Flags="7" Min="115.5" Max="124.952" Color="255,113,113" Visible="1"/>
+      <ColorBand Flags="7" Min="124.952" Max="134.404" Color="255,96,96" Visible="1"/>
+      <ColorBand Flags="15" Min="134.404" Max="143.856" Color="255,81,81" Visible="1"/>
+      <ColorBand Flags="1" Min="143.856" Max="143.856" Color="255,64,64" Visible="1"/>
      </EvenWidthBandAxis>
     </MoTeC.Scatter>
    </Controls>
@@ -544,7 +544,7 @@
     </MoTeC.TimeDistance>
     <MoTeC.Scatter Version="100" Name="Scatter (1)" PosPC="255,0,510,496" ShowCaption="0" AutoCaption="0" LinkZoom="1" ModeId="0" ShowDataLegend="1" ShowColorLegend="1" TelemetryZoom="0" ActiveTrace="0" TileMode="1" TileActiveChan="0" TileAutoCols="1" TileCols="1" XChannel="MuY FL" ZChannel="" XScaleMode="0" YScaleMode="0" ZScaleMode="0" ShowPoints="1" ShowDensity="0" DensityBins="50" DensityFillColorMode="1" DensityFillColor1="64,64,255" DensityFillColor2="255,64,64" IntervalStat="0" IntervalStat.BinWidth="100" ShowGridLines="1" ShowGradient="0" ShowColorBinSamples="1" Style="2" Size="1" ShowLines="0" ShowRegEquation="0" LinePointMode="1" CursorStyle="3" RegressionType="0" RegressionParam="0" RegressionZero="0" RegressionDigits="3">
      <Trace YChannel="MuX FL" Visible="1" YDelay="0"/>
-     <EvenWidthBandAxis PaletteMode="1" GradientMode="1" BandChanColor="210,210,210" AxisChanColor="210,210,210" Color1="64,64,255" Color2="255,64,64" ReversGradient="0" CentredBands="0" GreaterMaxBand="1" LessMinBand="1" Continuous="0" BandMode="1" DataMin="-1" DataMax="1" BandWidth="0.2" BandCount="10">
+     <EvenWidthBandAxis PaletteMode="1" GradientMode="1" BandChanColor="210,210,210" AxisChanColor="255,0,0" Color1="64,64,255" Color2="255,64,64" ReversGradient="0" CentredBands="0" GreaterMaxBand="1" LessMinBand="1" Continuous="0" BandMode="1" DataMin="-1" DataMax="1" BandWidth="0.2" BandCount="10">
       <ColorBand Flags="2" Min="-1" Max="-1" Color="64,64,255" Visible="1"/>
       <ColorBand Flags="7" Min="-1" Max="-0.8" Color="64,136,255" Visible="1"/>
       <ColorBand Flags="7" Min="-0.8" Max="-0.6" Color="64,203,255" Visible="1"/>
@@ -561,7 +561,7 @@
     </MoTeC.Scatter>
     <MoTeC.Scatter Version="100" Name="Scatter (2)" PosPC="0,0,255,496" ShowCaption="0" AutoCaption="0" LinkZoom="1" ModeId="0" ShowDataLegend="1" ShowColorLegend="1" TelemetryZoom="0" ActiveTrace="0" TileMode="1" TileActiveChan="0" TileAutoCols="1" TileCols="1" XChannel="MuY FL" ZChannel="" XScaleMode="0" YScaleMode="0" ZScaleMode="0" ShowPoints="1" ShowDensity="0" DensityBins="50" DensityFillColorMode="1" DensityFillColor1="64,64,255" DensityFillColor2="255,64,64" IntervalStat="0" IntervalStat.BinWidth="100" ShowGridLines="1" ShowGradient="0" ShowColorBinSamples="1" Style="2" Size="1" ShowLines="0" ShowRegEquation="0" LinePointMode="1" CursorStyle="3" RegressionType="0" RegressionParam="0" RegressionZero="0" RegressionDigits="3">
      <Trace YChannel="MuX FL" Visible="1" YDelay="0"/>
-     <EvenWidthBandAxis PaletteMode="1" GradientMode="1" BandChanColor="210,210,210" AxisChanColor="210,210,210" Color1="64,64,255" Color2="255,64,64" ReversGradient="0" CentredBands="0" GreaterMaxBand="1" LessMinBand="1" Continuous="0" BandMode="1" DataMin="-1" DataMax="1" BandWidth="0.2" BandCount="10">
+     <EvenWidthBandAxis PaletteMode="1" GradientMode="1" BandChanColor="210,210,210" AxisChanColor="255,0,0" Color1="64,64,255" Color2="255,64,64" ReversGradient="0" CentredBands="0" GreaterMaxBand="1" LessMinBand="1" Continuous="0" BandMode="1" DataMin="-1" DataMax="1" BandWidth="0.2" BandCount="10">
       <ColorBand Flags="2" Min="-1" Max="-1" Color="64,64,255" Visible="1"/>
       <ColorBand Flags="7" Min="-1" Max="-0.8" Color="64,136,255" Visible="1"/>
       <ColorBand Flags="7" Min="-0.8" Max="-0.6" Color="64,203,255" Visible="1"/>
@@ -578,7 +578,7 @@
     </MoTeC.Scatter>
     <MoTeC.Scatter Version="100" Name="Scatter (3)" PosPC="255,495,510,1000" ShowCaption="0" AutoCaption="0" LinkZoom="1" ModeId="0" ShowDataLegend="1" ShowColorLegend="1" TelemetryZoom="0" ActiveTrace="0" TileMode="1" TileActiveChan="0" TileAutoCols="1" TileCols="1" XChannel="MuY FL" ZChannel="" XScaleMode="0" YScaleMode="0" ZScaleMode="0" ShowPoints="1" ShowDensity="0" DensityBins="50" DensityFillColorMode="1" DensityFillColor1="64,64,255" DensityFillColor2="255,64,64" IntervalStat="0" IntervalStat.BinWidth="100" ShowGridLines="1" ShowGradient="0" ShowColorBinSamples="1" Style="2" Size="1" ShowLines="0" ShowRegEquation="0" LinePointMode="1" CursorStyle="3" RegressionType="0" RegressionParam="0" RegressionZero="0" RegressionDigits="3">
      <Trace YChannel="MuX FL" Visible="1" YDelay="0"/>
-     <EvenWidthBandAxis PaletteMode="1" GradientMode="1" BandChanColor="210,210,210" AxisChanColor="210,210,210" Color1="64,64,255" Color2="255,64,64" ReversGradient="0" CentredBands="0" GreaterMaxBand="1" LessMinBand="1" Continuous="0" BandMode="1" DataMin="-1" DataMax="1" BandWidth="0.2" BandCount="10">
+     <EvenWidthBandAxis PaletteMode="1" GradientMode="1" BandChanColor="210,210,210" AxisChanColor="255,0,0" Color1="64,64,255" Color2="255,64,64" ReversGradient="0" CentredBands="0" GreaterMaxBand="1" LessMinBand="1" Continuous="0" BandMode="1" DataMin="-1" DataMax="1" BandWidth="0.2" BandCount="10">
       <ColorBand Flags="2" Min="-1" Max="-1" Color="64,64,255" Visible="1"/>
       <ColorBand Flags="7" Min="-1" Max="-0.8" Color="64,136,255" Visible="1"/>
       <ColorBand Flags="7" Min="-0.8" Max="-0.6" Color="64,203,255" Visible="1"/>
@@ -595,7 +595,7 @@
     </MoTeC.Scatter>
     <MoTeC.Scatter Version="100" Name="Scatter" PosPC="0,496,255,1000" ShowCaption="0" AutoCaption="0" LinkZoom="1" ModeId="0" ShowDataLegend="1" ShowColorLegend="1" TelemetryZoom="0" ActiveTrace="0" TileMode="1" TileActiveChan="0" TileAutoCols="1" TileCols="1" XChannel="MuY FL" ZChannel="" XScaleMode="0" YScaleMode="0" ZScaleMode="0" ShowPoints="1" ShowDensity="0" DensityBins="50" DensityFillColorMode="1" DensityFillColor1="64,64,255" DensityFillColor2="255,64,64" IntervalStat="0" IntervalStat.BinWidth="100" ShowGridLines="1" ShowGradient="0" ShowColorBinSamples="1" Style="2" Size="1" ShowLines="0" ShowRegEquation="0" LinePointMode="1" CursorStyle="3" RegressionType="0" RegressionParam="0" RegressionZero="0" RegressionDigits="3">
      <Trace YChannel="MuX FL" Visible="1" YDelay="0"/>
-     <EvenWidthBandAxis PaletteMode="1" GradientMode="1" BandChanColor="210,210,210" AxisChanColor="210,210,210" Color1="64,64,255" Color2="255,64,64" ReversGradient="0" CentredBands="0" GreaterMaxBand="1" LessMinBand="1" Continuous="0" BandMode="1" DataMin="-1" DataMax="1" BandWidth="0.2" BandCount="10">
+     <EvenWidthBandAxis PaletteMode="1" GradientMode="1" BandChanColor="210,210,210" AxisChanColor="255,0,0" Color1="64,64,255" Color2="255,64,64" ReversGradient="0" CentredBands="0" GreaterMaxBand="1" LessMinBand="1" Continuous="0" BandMode="1" DataMin="-1" DataMax="1" BandWidth="0.2" BandCount="10">
       <ColorBand Flags="2" Min="-1" Max="-1" Color="64,64,255" Visible="1"/>
       <ColorBand Flags="7" Min="-1" Max="-0.8" Color="64,136,255" Visible="1"/>
       <ColorBand Flags="7" Min="-0.8" Max="-0.6" Color="64,203,255" Visible="1"/>

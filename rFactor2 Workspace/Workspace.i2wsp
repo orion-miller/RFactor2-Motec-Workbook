@@ -2,11 +2,21 @@
 <Analysis Locale="English_United States.1252" DefaultLocale="C" Version="103" ShowOverlays="1" ExcludeUntrusted="1" IncludeOverlays="0" GraphTimeFormat="4" RemoveOnChanDblClick="1" ProfileId="Circuit" SetupSheetPasswdReqd="0" LapTimeDisplayFormat="0" LapTimeDisplayUnit="mph" LapNameInOut="1" AutoLapNumber="0" LapTrustPC="0" Splitter.PC="6596">
  <Resources/>
  <LatGTrackGen/>
- <DataSelect SelectFastestOnLoad="1" DefaultShowDisabled="0" MainColorSource="0">
+ <DataSelect SelectFastestOnLoad="1" DefaultShowDisabled="0" MainColorSource="1">
   <Explore HRef="D:\Games\SteamLibrary\steamapps\common\rFactor 2\LOG"/>
-  <DataSources TelemetryEnabled="1"/>
-  <View Name="Laps" Color="128,240,0" View="Laps"/>
-  <View Name="Outings" Color="240,128,0" View="Outings" ColumnWidths="134:53:20:20:20:80:80:80"/>
+  <DataSources TelemetryEnabled="1">
+   <LoggedDataSource Name="D:\Games\SteamLibrary\steamapps\common\rFactor 2\LOG\2024-10-06 - 23-52-33 - Mills Inner Loop A - P1.ld"/>
+   <LoggedDataSource Name="D:\Games\SteamLibrary\steamapps\common\rFactor 2\LOG\2024-10-06 - 00-39-24 - VIR South Course - P1.ld"/>
+   <LoggedDataSource Name="D:\Games\SteamLibrary\steamapps\common\rFactor 2\LOG\2024-10-06 - 23-33-24 - VIR South Course - P1.ld"/>
+  </DataSources>
+  <View Name="Laps" Color="128,240,0" View="Laps">
+   <Main Range.Id="D:\Games\SteamLibrary\steamapps\common\rFactor 2\LOG\2024-10-06 - 23-52-33 - Mills Inner Loop A - P1.ld::::Lap 5"/>
+   <Ref Range.Id="D:\Games\SteamLibrary\steamapps\common\rFactor 2\LOG\2024-10-06 - 23-52-33 - Mills Inner Loop A - P1.ld::::Lap 10"/>
+   <Overlay Range.Id="D:\Games\SteamLibrary\steamapps\common\rFactor 2\LOG\2024-10-06 - 23-52-33 - Mills Inner Loop A - P1.ld::::Lap 11"/>
+  </View>
+  <View Name="Outings" Color="240,128,0" View="Outings" ColumnWidths="134:53:20:20:20:80:80:80">
+   <Main Range.Id="D:\Games\SteamLibrary\steamapps\common\rFactor 2\LOG\2024-10-06 - 23-33-24 - VIR South Course - P1.ld::::11:33:24 PM,  "/>
+  </View>
  </DataSelect>
  <ChannelsWindow Method="2"/>
  <CAN/>
@@ -83,7 +93,7 @@
   <DockWindow Id="Track" Visible="0" IsDocked="0" Position="460,323,701,491"/>
  </DockWindows>
  <TelemetrySettings/>
- <DataExport Path="C:\Users\orion\Downloads" File="2024-08-24 - 22-17-17 - Laguna Seca - P1.csv" Selection="0" Rate="0" Flags="3"/>
+ <DataExport Path="" File="" Selection="0" Rate="0" Flags="0"/>
  <VideoGenerate VideoView="" Selection="0">
   <OptionItems/>
  </VideoGenerate>
